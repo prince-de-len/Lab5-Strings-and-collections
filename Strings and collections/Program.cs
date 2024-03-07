@@ -7,8 +7,11 @@ class Program
 {
     static void Main()
     {
-        string filesToFixDirectory = "C:\\Users\\princedelen\\source\\repos\\Strings and collections\\Strings and collections\\FilesToFix";
-        string errorWordsFilePath = "C:\\Users\\princedelen\\source\\repos\\Strings and collections\\Strings and collections\\Dictionary.txt";
+        Console.WriteLine("Введите директорию файлов, которые нужно исправить");
+        string filesToFixDirectory = Console.ReadLine();
+        Console.WriteLine("Введите расположения словаря \"ошибочных слов\"");
+        string errorWordsFilePath = Console.ReadLine();
+        Console.WriteLine();
 
         Dictionary<string, string> errorWords = LoadErrorWords(errorWordsFilePath);
 
